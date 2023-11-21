@@ -15,7 +15,30 @@
   </head>
   <body>
     <div
-      style="border: 1px solid rgb(255, 0, 0); width: 375px; height: 755px"
+      style="
+        position: absolute;
+        width: 200px;
+        height: 200px;
+        border: 1px solid rgb(0, 13, 255);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      "
+    >
+      <p id="one"></p>
+      <p id="too"></p>
+    </div>
+    <div
+      id="qwe"
+      style="border: 1px solid rgb(255, 0, 0); width: 100vw; height: 100vh"
     ></div>
+    <script>
+      const one = document.querySelector("#one");
+      const too = document.querySelector("#too");
+      one.innerHTML = qwe.offsetWidth;
+      too.innerHTML = qwe.offsetHeight;
+      console.log("Ширина елементу qwe:", qwe.offsetWidth);
+      console.log("Висота елементу qwe:", qwe.offsetHeight);
+    </script>
   </body>
 </html>
